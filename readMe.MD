@@ -44,6 +44,12 @@ Create six tables in SQL Server that demonstrate the following concepts:
     - One-to-Many: `Publishers` to `BookPublishers` (via `PublisherID`)
     - Many-to-Many: `Books` to `Libraries` (via `LibraryBooks`)
 
+    2. **Check Constraints and Altering Tables:**
+        - Add a check constraint to ensure that `PublishedYear` in the `Books` table is greater than 1900.
+        - Add a check constraint to ensure that `Quantity` in the `LibraryBooks` table is greater than 0.
+        - Alter the `Books` table to add a new column `ISBN` (VARCHAR(13), Unique).
+        - Alter the `Libraries` table to change the `Location` column to `LibraryLocation` (VARCHAR(200), Not Null).
+
 3. **Insert Values:**
     - Insert at least 3 records into each table.
 
